@@ -57,6 +57,21 @@
 
   <ion-card>
 
+    <ion-searchbar (ionInput)="getItems($event)" placeholder=Search></ion-searchbar>
+    <ion-list>
+      <button ion-item (click)="openItem(item)" *ngFor="let item of currentItems">
+        <ion-avatar item-start>
+          <img [src]="item.profilePic" />
+        </ion-avatar>
+        <h2>HOli</h2>
+        <p>hoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <ion-note item-end *ngIf="item.note">yes</ion-note>
+      </button>
+    </ion-list>
+
+
+
+
     <ion-item>
       <ion-avatar item-start>
         <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-usuario-s%C3%ADmbolo-de-la-persona-avatar-humano-84519083.jpgjpg">
