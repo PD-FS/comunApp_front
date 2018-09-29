@@ -13,6 +13,19 @@
 </ion-header>
 
 <ion-content padding>
+
+    <ion-searchbar (ionInput)="getItems($event)" placeholder=Search></ion-searchbar>
+    <ion-list>
+      <button ion-item (click)="openItem(item)" *ngFor="let item of currentItems">
+        <ion-avatar item-start>
+          <img [src]="item.profilePic" />
+        </ion-avatar>
+        <h2>HOli</h2>
+        <p>hoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <ion-note item-end *ngIf="item.note">yes</ion-note>
+      </button>
+    </ion-list>
+
     <ion-card>
   
       <ion-item>
@@ -23,7 +36,7 @@
         <p>Date</p>
       </ion-item>
   
-      <img src="http://soytecno.com/wp-content/uploads/2016/07/organizacion-de-eventos.jpg">
+      <img src="https://cdn.shopify.com/s/files/1/2730/5120/products/AB68_Sala_Imperial_2_muebles_muebles_modernos_palo_bonito_muebles_palmira_palo_bonito_salas_muebles_de_sala_en_palmira_muebles_palmira_muebles_cali_solo_muebles_muebles_baratos_800x.png?v=1519146049">
   
       <ion-card-content>
         <p>
@@ -36,14 +49,14 @@
       <ion-row>
         <ion-col>
           <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='thumbs-up'></ion-icon>
-            12 Likes
+            <ion-icon name='logo-usd'></ion-icon>
+            59.000 
           </button>
         </ion-col>
         <ion-col>
           <button ion-button color="primary" clear small icon-start>
             <ion-icon name='text'></ion-icon>
-            4 Comments
+            4 Comentarios
           </button>
         </ion-col>
         <ion-col center text-center>
@@ -55,22 +68,6 @@
     </ion-card>
   
     <ion-card>
-  
-      <ion-searchbar (ionInput)="getItems($event)" placeholder=Search></ion-searchbar>
-      <ion-list>
-        <button ion-item (click)="openItem(item)" *ngFor="let item of currentItems">
-          <ion-avatar item-start>
-            <img [src]="item.profilePic" />
-          </ion-avatar>
-          <h2>HOli</h2>
-          <p>hoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-          <ion-note item-end *ngIf="item.note">yes</ion-note>
-        </button>
-      </ion-list>
-  
-  
-  
-  
       <ion-item>
         <ion-avatar item-start>
           <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-usuario-s%C3%ADmbolo-de-la-persona-avatar-humano-84519083.jpgjpg">
@@ -80,7 +77,7 @@
         <p>Date</p>
       </ion-item>
   
-      <img src="https://www.clublomasdelzurqui.com/images/historia-club-zurqui-imageb.jpg">
+      <img src="https://www.authogar.com/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/1/_/1_47.jpg">
   
       <ion-card-content>
         <p>
@@ -93,14 +90,14 @@
       <ion-row>
         <ion-col>
           <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='thumbs-up'></ion-icon>
-            12 Likes
+            <ion-icon name='logo-usd'></ion-icon>
+            60.000
           </button>
         </ion-col>
         <ion-col>
           <button ion-button color="primary" clear small icon-start>
             <ion-icon name='text'></ion-icon>
-            4 Comments
+            2 Comentarios
           </button>
         </ion-col>
         <ion-col center text-center>
@@ -122,7 +119,7 @@
         <p>Date</p>
       </ion-item>
   
-      <img src="https://bilnea.com/wp-content/uploads/eventos.jpg">
+      <img src="https://www.scalaingenieros.com.co/wp-content/uploads/2018/04/Artboard-1-copy-6-20-2.jpg">
   
       <ion-card-content>
         <p>
@@ -135,14 +132,14 @@
       <ion-row>
         <ion-col>
           <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='thumbs-up'></ion-icon>
-            12 Likes
+            <ion-icon name='logo-usd'></ion-icon>
+            78.000.000
           </button>
         </ion-col>
         <ion-col>
           <button ion-button color="primary" clear small icon-start>
             <ion-icon name='text'></ion-icon>
-            4 Comments
+            3 Comentarios
           </button>
         </ion-col>
         <ion-col center text-center>
