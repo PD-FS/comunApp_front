@@ -34,6 +34,7 @@ export class MyApp {
   pages: any[] = [
     { title: 'event', component: 'EventPage' },
     { title: 'event-registration', component: 'EventRegistrationPage' },
+    { title: 'service', component:'SevicePage'},
     { title: 'Welcome', component: 'WelcomePage' },
     { title: 'Tutorial', component: 'TutorialPage' },
     { title: 'Tabs', component: 'TabsPage' },
