@@ -14,6 +14,158 @@
 
 
 <ion-content padding>
+  <ion-searchbar (ionInput)="getItems($event)" placeholder=Search></ion-searchbar>
+  <ion-list>
+    <button ion-item (click)="openItem(item)" *ngFor="let item of currentItems">
+      <ion-avatar item-start>
+        <img [src]="item.profilePic" />
+      </ion-avatar>
+      <h2>HOli</h2>
+      <p>hoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+      <ion-note item-end *ngIf="item.note"></ion-note>
+    </button>
+  </ion-list>
+  
+<ion-card>
 
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-usuario-s%C3%ADmbolo-de-la-persona-avatar-humano-84519083.jpg">
+    </ion-avatar>
+    <h2> Name of the event</h2>
+    <p>Date</p>
+  </ion-item>
+
+  <img src="http://soytecno.com/wp-content/uploads/2016/07/organizacion-de-eventos.jpg">
+
+  <ion-card-content>
+    <p>
+      Description of the event
+      Description of the event
+      Description of the event                  
+      Description of the event</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button color="primary" clear small icon-start>
+        <ion-icon name='thumbs-up'></ion-icon>
+        12 Likes
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button color="primary" clear small icon-start>
+        <ion-icon name='text'></ion-icon>
+        4 Comments
+      </button>
+    </ion-col>
+    <ion-col center text-center>
+      <ion-note>
+        11h ago
+      </ion-note>
+    </ion-col>
+  </ion-row>
+</ion-card>
+
+<ion-card>
+
+  <ion-slides pager>
+
+    <ion-slide style="background-color: green">
+      <h2>Slide 1</h2>
+    </ion-slide>
+  
+    <ion-slide style="background-color: blue">
+      <h2>Slide 2</h2>
+    </ion-slide>
+  
+    <ion-slide style="background-color: red">
+      <h2>Slide 3</h2>
+    </ion-slide>
+  
+  </ion-slides> 
+
+
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-usuario-s%C3%ADmbolo-de-la-persona-avatar-humano-84519083.jpgjpg">
+    </ion-avatar>
+    <h2>
+      Name of the event</h2>
+    <p>Date</p>
+  </ion-item>
+
+  <img src="https://www.clublomasdelzurqui.com/images/historia-club-zurqui-imageb.jpg">
+
+  <ion-card-content>
+    <p>
+      Description of the event 
+      Description of the event
+      Description of the event
+      Description of the event</p>  
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button color="primary" clear small icon-start>
+        <ion-icon name='thumbs-up'></ion-icon>
+        12 Likes
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button color="primary" clear small icon-start>
+        <ion-icon name='text'></ion-icon>
+        4 Comments
+      </button>
+    </ion-col>
+    <ion-col center text-center>
+      <ion-note>
+        11h ago
+      </ion-note>
+    </ion-col>
+  </ion-row>
+</ion-card>
+
+<ion-card>
+
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-usuario-s%C3%ADmbolo-de-la-persona-avatar-humano-84519083.jpgjpg">
+    </ion-avatar>
+    <h2>
+      Name of the event</h2>
+    <p>Date</p>
+  </ion-item>
+
+  <img src="https://bilnea.com/wp-content/uploads/eventos.jpg">
+
+  <ion-card-content>
+    <p>
+      Description of the event 
+      Description of the event
+      Description of the event
+      Description of the event</p>  
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button color="primary" clear small icon-start>
+        <ion-icon name='thumbs-up'></ion-icon>
+        12 Likes
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button color="primary" clear small icon-start>
+        <ion-icon name='text'></ion-icon>
+        4 Comments
+      </button>
+    </ion-col>
+    <ion-col center text-center>
+      <ion-note>
+        11h ago
+      </ion-note>
+    </ion-col>
+  </ion-row>
+</ion-card>
 </ion-content>
  
