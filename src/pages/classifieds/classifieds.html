@@ -7,38 +7,36 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>classifieds</ion-title>
+    <ion-title>Clasificados</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
   <ion-content padding>
+      <ion-searchbar (ionInput)="getItems($event)" placeholder=Search></ion-searchbar>
     <ion-card>
   
       <ion-item>
         <ion-avatar item-start>
-          <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-usuario-s%C3%ADmbolo-de-la-persona-avatar-humano-84519083.jpg">
+          <img src="https://png.icons8.com/color/1600/user-male-skin-type-4.png">
         </ion-avatar>
-        <h2> Name of the event</h2>
-        <p>Date</p>
+        <h2>Apartamento</h2>  
+        <p>Torre 2</p>
+        <p>Precio: $100.000</p>
       </ion-item>
   
-      <img src="http://soytecno.com/wp-content/uploads/2016/07/organizacion-de-eventos.jpg">
+      <img src="http://conaltura.com/wp-content/uploads/apto-tipo-A.jpg">
   
       <ion-card-content>
-        <p>
-          Description of the event
-          Description of the event
-          Description of the event                  
-          Description of the event</p>
+        <p>Vendo Apartamento ubicado en la torre 2 gran espacio, nuena vista, calido y comodo</p>
       </ion-card-content>
   
       <ion-row>
         <ion-col>
           <button ion-button color="primary" clear small icon-start>
             <ion-icon name='thumbs-up'></ion-icon>
-            12 Likes
+            12.00000
           </button>
         </ion-col>
         <ion-col>
@@ -57,7 +55,7 @@
   
     <ion-card>
   
-      <ion-searchbar (ionInput)="getItems($event)" placeholder=Search></ion-searchbar>
+      
       <ion-list>
         <button ion-item (click)="openItem(item)" *ngFor="let item of currentItems">
           <ion-avatar item-start>
@@ -76,12 +74,12 @@
         <ion-avatar item-start>
           <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-usuario-s%C3%ADmbolo-de-la-persona-avatar-humano-84519083.jpgjpg">
         </ion-avatar>
-        <h2>
-          Name of the event</h2>
-        <p>Date</p>
+        <h2>Apartamento</h2>  
+        <p>Torre 2</p>
+        <p>Precio: $100.000</p>
       </ion-item>
   
-      <img src="https://www.clublomasdelzurqui.com/images/historia-club-zurqui-imageb.jpg">
+      <img src="http://www.muebleslive.com/muebles/wp-content/uploads/2015/07/slider-muebles-live-sala-home-1024x449.jpg">
   
       <ion-card-content>
         <p>

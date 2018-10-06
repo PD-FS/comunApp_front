@@ -32,19 +32,11 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    { title: 'event', component: 'EventPage' },
-    { title: 'event-registration', component: 'EventRegistrationPage' },
-    { title: 'service', component:'SevicePage'},
-    { title: 'Welcome', component: 'WelcomePage' },
-    { title: 'Tutorial', component: 'TutorialPage' },
-    { title: 'Tabs', component: 'TabsPage' },
-    { title: 'Cards', component: 'CardsPage' },
-    { title: 'Login', component: 'LoginPage' },
-    { title: 'Signup', component: 'SignupPage' },
-    { title: 'Master Detail', component: 'ListMasterPage' },
-    { title: 'Menu', component: 'MenuPage' },
-    { title: 'Settings', component: 'SettingsPage' },
-    { title: 'Search', component: 'SearchPage' }
+    { title: 'Eventos', component: 'EventPage' },
+    { title: 'Registrar Eventos', component: 'EventRegistrationPage' },
+    { title: 'Servicios', component:'SevicePage'},
+    { title: 'Clasificados', component: 'ClassifiedsPage' },
+    { title: 'Registrar Clasificados', component:'RegisterClassifiedsPage'}
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
