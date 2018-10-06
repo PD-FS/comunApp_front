@@ -36,7 +36,7 @@ export class MyApp {
     { title: 'Registrar Eventos', component: 'EventRegistrationPage' },
     { title: 'Servicios', component:'SevicePage'},
     { title: 'Clasificados', component: 'ClassifiedsPage' },
-    { title: 'Registrar Clasificados', component:'RegisterClassifiedsPage'}
+    { title: 'Registrar Clasificados', component:'RegisterClassifiedsPage'} 
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
