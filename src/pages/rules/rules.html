@@ -14,134 +14,42 @@
 
 
 <ion-content padding>
-    <ion-searchbar (ionInput)="getItems($event)" placeholder=Search></ion-searchbar>
-    <ion-list>
-      <button ion-item (click)="openItem(item)" *ngFor="let item of currentItems">
-        <ion-avatar item-start>
-          <img [src]="item.profilePic" />
-        </ion-avatar>
-        <h2>HOli</h2>
-        <p>hoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-        <ion-note item-end *ngIf="item.note"></ion-note>
-      </button>
-    </ion-list>
+    
     
   <ion-card>
 
     <ion-item>
-      <ion-avatar item-start>
-        <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-usuario-s%C3%ADmbolo-de-la-persona-avatar-humano-84519083.jpg">
-      </ion-avatar>
-      <h2>Party In The House</h2>
-      <p>5-11-2018</p>
-      <p><ion-icon name="pin"></ion-icon> Salon Comunal</p>
+      
+      <h2>REGLAS GENERALES</h2>
     </ion-item>
 
-    <img src="http://www.instalacionesfami.com/wp-content/uploads/2015/02/instalaciones-fami-servicios-reparaciones.jpg">
+    
 
     <ion-card-content>
-      <p>Fiesta en el salon comunal, cover 30.000, barra libre y buena musica no puedes faltar</p>
-    </ion-card-content>
+      <p>Septiembre 2013 - El caso de David Emanuel Manotas Char, a quien le imputaron cargos por el asesinato de Francisco Cifuentes Ferreira en días pasados, en un edificio del norte de Bogotá, volvió a poner sobre la mesa problemas de convivencia en las copropiedades.
 
-    <ion-row>
-      <ion-col>
-        <button ion-button color="primary" clear small icon-start>
-          <ion-icon name='thumbs-up'></ion-icon>
-          30 Likes
-        </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button color="primary" clear small icon-start>
-          <ion-icon name='text'></ion-icon>
-          6 Comments
-        </button>
-      </ion-col>
-      <ion-col center text-center>
-        <ion-note>
-          11h ago
-        </ion-note>
-      </ion-col>
-    </ion-row>
+          El detonante fue el reclamo de Cifuentes por el ruido y otras acciones que lo tenían agobiado a él y a otros residentes. Este es el hecho mediático; sin embargo, hay otros similares y algunos más sin el desenlace fatal, pero que se viven a diario.
+          
+          “Las personas no acatan las normas y, valga decirlo, a veces la comunidad es indiferente y esto hace que sea recurrente el mal comportamiento”, explica la abogada Nora Pabón Gómez, especialista en copropiedades, quien asegura que prevenir es la clave.
+          ¿A QUIÉN LE CORRESPONDE GARANTIZAR LOS DERECHOS?
+          El Estado, con las autoridades de policía, debe proteger a los ciudadanos y, en general, a todas las personas.
+          
+          ¿CÓMO SE DEBE OBRAR EN LOS EDIFICIOS Y CONJUNTOS?
+          En los que están sometidos al régimen de propiedad horizontal, la garantía de los derechos no solo compete a la policía, cuando las conductas de los infractores incurren en comportamientos previstos en los códigos, sino a los administradores y a los consejos de administración, que deben hacer cumplir los reglamentos y las normas de convivencia.
+          
+          ¿CONVIENE EL RECLAMO DIRECTO AL VECINO QUE MOLESTA?
+          Recomiendo no dirigirse directamente, ya que no sabemos qué clase de persona inadaptada abrirá la puerta.
+          
+          ¿QUÉ SE DEBE HACER?
+          Cuando una persona ocasiona ruidos intolerantes está violando los reglamentos. Por eso, es obligación de los órganos de administración imponer las sanciones y, si es el caso, el administrador debe ir a la policía y a las autoridades judiciales.
+          
+          Algunas veces los vigilantes deben colaborar con los afectados para solicitar a los infractores que bajen el volumen o llamar a la policía, que está obligada a acudir.
+          
+          ¿QUÉ RESPONSABILIDAD LE CABE AL ADMINISTRADOR O A LA INMOBILIARIA?
+          Debo insistir en que los ciudadanos también tienen que comprometerse y no ser indiferentes. El administrador, por su parte, debe hacer que se cumplan las normas y las medidas que rigen la propiedad horizontal, tratar de solucionar conflictos y sancionar, y en casos extremos acudir a la fiscalía y las autoridades penales.
+          
+          Las inmobiliarias y las personas que arriendan deberían ser más cuidadosas y saber a quién le arriendan, y averiguar antecedentes.</p>
+    </ion-card-content>
   </ion-card>
 
-  <ion-card>
-
-
-
-
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-usuario-s%C3%ADmbolo-de-la-persona-avatar-humano-84519083.jpgjpg">
-      </ion-avatar>
-      <h2>Nadando a la meta</h2>
-      <p>20-10-2018</p>
-      <p><ion-icon name="pin"></ion-icon> Salon deportivo</p>
-    </ion-item>
-
-    <img src="https://admin.kienyke.com/wp-content/uploads/2018/06/Paseador-de-perros.jpg">
-
-    <ion-card-content>
-      <p>Concurso de natacion de todas las edades, ven ya y participa quien te dice que no puedas quedar en el primer lugar</p>  
-    </ion-card-content>
-
-    <ion-row>
-      <ion-col>
-        <button ion-button color="primary" clear small icon-start>
-          <ion-icon name='thumbs-up'></ion-icon>
-          12 Likes
-        </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button color="primary" clear small icon-start>
-          <ion-icon name='text'></ion-icon>
-          4 Comments
-        </button>
-      </ion-col>
-      <ion-col center text-center>
-        <ion-note>
-          11h ago
-        </ion-note>
-      </ion-col>
-    </ion-row>
-  </ion-card>
-
-  <ion-card>
-
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-usuario-s%C3%ADmbolo-de-la-persona-avatar-humano-84519083.jpgjpg">
-      </ion-avatar>
-      <h2>Bufet de Gala</h2>
-      <p>4-12-2018</p>
-      <p><ion-icon name="pin"></ion-icon> Salon Comunal</p>
-    </ion-item>
-
-    <img src="https://retos-directivos.eae.es/wp-content/uploads/2016/06/empresas-de-servicios.jpg">
-
-    <ion-card-content>
-      <p>Estan invitados todos los residentes dentro del condomino a una sena de gala para celebrar aniversario del condominio, 
-        pueden llevar un acompañante
-      </p>  
-    </ion-card-content>
-
-    <ion-row>
-      <ion-col>
-        <button ion-button color="primary" clear small icon-start>
-          <ion-icon name='thumbs-up'></ion-icon>
-          12 Likes
-        </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button color="primary" clear small icon-start>
-          <ion-icon name='text'></ion-icon>
-          4 Comments
-        </button>
-      </ion-col>
-      <ion-col center text-center>
-        <ion-note>
-          11h ago
-        </ion-note>
-      </ion-col>
-    </ion-row>
-  </ion-card>
 </ion-content>

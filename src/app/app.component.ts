@@ -37,9 +37,8 @@ export class MyApp {
     { title: 'Servicios', component:'SevicePage'},
     { title: 'Clasificados', component: 'ClassifiedsPage' },
     { title: 'Registrar Clasificados', component:'RegisterClassifiedsPage'},
-    { title: 'Reglas', component: 'RulesPage'}
+    { title: 'Reglas', component:'RulesPage'}   
   ]
-
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
