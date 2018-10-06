@@ -12,141 +12,42 @@
 
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+    <form (submit)="doLogin()">
+      <ion-list>
+  
+        <ion-item>
+          <ion-label>NOMBRE</ion-label>
+          <ion-input type="text"  name="name"></ion-input>
+        </ion-item>
 
-    <ion-searchbar (ionInput)="getItems($event)" placeholder=Search></ion-searchbar>
-    <ion-list>
-      <button ion-item (click)="openItem(item)" *ngFor="let item of currentItems">
-        <ion-avatar item-start>
-          <img [src]="item.profilePic" />
-        </ion-avatar>
-        <h2>HOli</h2>
-        <p>hoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-        <ion-note item-end *ngIf="item.note">yes</ion-note>
-      </button>
-    </ion-list>
+        <ion-item>
+            <ion-label>TIPO DE CLASIFICADO</ion-label>
+           <ion-select>
+             <ion-option value="f">REUNION</ion-option>
+             <ion-option value="2">15 AÑOS</ion-option>
+            <ion-option value="3">MISA</ion-option>
+           </ion-select>
+          
+        </ion-item>
+        
+        <ion-item>
+            <ion-label>DIA Y HORA DEL EVENTO</ion-label>
+            <ion-datetime displayFormat="DD/MM/YYYY hh:mm a" ></ion-datetime>
+          </ion-item>
+        
+          <ion-item>
+              <ion-label>CANTIDAD DE PERSONAS</ion-label>
+              <ion-input type="number"  name="name"></ion-input>
+            
+          </ion-item>
 
-    <ion-card>
+
+        <div padding>
+          <button ion-button color="primary" block>CONFIRMAR</button>
+        </div>
   
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-usuario-s%C3%ADmbolo-de-la-persona-avatar-humano-84519083.jpg">
-        </ion-avatar>
-        <h2> Name of the event</h2>
-        <p>Date</p>
-      </ion-item>
-  
-      <img src="https://cdn.shopify.com/s/files/1/2730/5120/products/AB68_Sala_Imperial_2_muebles_muebles_modernos_palo_bonito_muebles_palmira_palo_bonito_salas_muebles_de_sala_en_palmira_muebles_palmira_muebles_cali_solo_muebles_muebles_baratos_800x.png?v=1519146049">
-  
-      <ion-card-content>
-        <p>
-          Description of the event
-          Description of the event
-          Description of the event                  
-          Description of the event</p>
-      </ion-card-content>
-  
-      <ion-row>
-        <ion-col>
-          <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='logo-usd'></ion-icon>
-            59.000 
-          </button>
-        </ion-col>
-        <ion-col>
-          <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='text'></ion-icon>
-            4 Comentarios
-          </button>
-        </ion-col>
-        <ion-col center text-center>
-          <ion-note>
-            11h ago
-          </ion-note>
-        </ion-col>
-      </ion-row>
-    </ion-card>
-  
-    <ion-card>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-usuario-s%C3%ADmbolo-de-la-persona-avatar-humano-84519083.jpgjpg">
-        </ion-avatar>
-        <h2>
-          Name of the event</h2>
-        <p>Date</p>
-      </ion-item>
-  
-      <img src="https://www.authogar.com/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/1/_/1_47.jpg">
-  
-      <ion-card-content>
-        <p>
-          Description of the event 
-          Description of the event
-          Description of the event
-          Description of the event</p>  
-      </ion-card-content>
-  
-      <ion-row>
-        <ion-col>
-          <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='logo-usd'></ion-icon>
-            60.000
-          </button>
-        </ion-col>
-        <ion-col>
-          <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='text'></ion-icon>
-            2 Comentarios
-          </button>
-        </ion-col>
-        <ion-col center text-center>
-          <ion-note>
-            11h ago
-          </ion-note>
-        </ion-col>
-      </ion-row>
-    </ion-card>
-  
-    <ion-card>
-  
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-usuario-s%C3%ADmbolo-de-la-persona-avatar-humano-84519083.jpgjpg">
-        </ion-avatar>
-        <h2>
-          Name of the event</h2>
-        <p>Date</p>
-      </ion-item>
-  
-      <img src="https://www.scalaingenieros.com.co/wp-content/uploads/2018/04/Artboard-1-copy-6-20-2.jpg">
-  
-      <ion-card-content>
-        <p>
-          Description of the event 
-          Description of the event
-          Description of the event
-          Description of the event</p>  
-      </ion-card-content>
-  
-      <ion-row>
-        <ion-col>
-          <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='logo-usd'></ion-icon>
-            78.000.000
-          </button>
-        </ion-col>
-        <ion-col>
-          <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='text'></ion-icon>
-            3 Comentarios
-          </button>
-        </ion-col>
-        <ion-col center text-center>
-          <ion-note>
-            11h ago
-          </ion-note>
-        </ion-col>
-      </ion-row>
-    </ion-card>
+      </ion-list>
+    </form>
   </ion-content>
+ 
